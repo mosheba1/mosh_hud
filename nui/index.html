@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>MOSH HUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1f6bcfadd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="initapp">
+        <div class="lobbies_hud">
+            <img class="hud_logo me-3" :src="server_logo">
+            <div class="hud_holder">
+                <span>Welcome to <strong> {{ serverName }},</strong> <strong class="main_color me-2">{{ serverPlayers }}</strong>&nbsp; | &nbsp;</span>
+                <span> <span v-html="ID_ICON" ></span> ID: <strong class="main_color me-2">{{ ID }}</strong></span>
+                <span> <span v-html="PLAYERS_ICON" ></span> Players: <strong class="main_color me-2">{{ active_players }}</strong></span>
+                <span> <span v-html="FPS_ICON" ></span> FPS: <strong class="main_color me-2" v-html="player_fps"></strong></span>
+                <span> <span v-html="FPS_ICON" ></span> PING (ms): <strong class="main_color me-2" v-html="playerpingofc"> ms</strong></span>
+                <span> <span v-html="DISCORD_ICON" ></span> Discord: <strong class="main_color me-2">{{ discord }}</strong></span>
+                <span> <span v-html="WEBSITE_ICON" ></span> Website: <strong class="main_color me-2">{{ website_link }}</strong></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

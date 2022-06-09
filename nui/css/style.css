@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
+html, body {
+    background-color: transparent;
+}
+
+
+.hud_logo {
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#initapp {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.lobbies_hud, .element {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-family: 'Titillium Web', 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.lobbies_hud {
+    padding: 5px;
+    border-left: 3px solid #fd4349 ;
+    border-right: 3px solid #fd4349 ;
+}
+
+.element {
+    padding: 5.15px 10.3px;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+.tooltip {
+    background: transparent;
+    font-family: "Lato";
+}
+
+.tooltip-inner {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #248bdf ;
+    border-radius: 0;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.tooltip-arrow {
+    opacity: 0;
+}
+
+
+.main_color {
+    color: #fd4349 !important;
+    text-shadow: 0px 0px 8px #262626;
+}
+
+.main_lobby_color {
+    color: #605bb2 !important;
+    text-shadow: 0px 0px 8px #272727;
+}
+
+.red_main_color {
+    color: #f11c00 !important;
+    text-shadow: 0px 0px 8px #272727;
+}
+
+.chill_lobby_color {
+    color: #1e3f5a !important;
+    text-shadow: 0px 0px 8px #272727;
+}
+
+
+
+
+strong {
+    font-weight: 600;
+}
